@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width:100%;
+    height: 100%;
+    /*background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("landscape.jpg");*/
+    background-color: #000000;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    position:absolute;
+    left:0px;
+    top :0px;
+}
+.logo{
+    width: 100%;
+    cursor: pointer;
+    color:#ffcc33;
+    text-align: center;
+}
+
+.btnIDc{
+    display: flex;
+    justify-content: center;
+    position :relative;
+    left : 0%;
+    top : 30%;
+    
+}
+button{
+    width: 200px;
+    padding:15px 0;
+    text-align: center;
+    margin:10px 0px;
+    border-radius: 25px;
+    font-weight: bold;
+    display: block;
+    border: 2px solid #ffcc33;
+    background: transparent;
+    color:azure;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+span{
+    background: #ffcc33;
+    color: transparent;
+    text-align: center;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: index-1;
+    transition: 0.5s;
+    
+}
+button:hover span{
+    width: 100%; 
+    border: 2px #ffcc33;
+    color: #ffcc33;
+    background-color: #000000;
+    
+}
+button:hover{
+    border:none;
+    color: rgb(0, 0, 0);
+}
